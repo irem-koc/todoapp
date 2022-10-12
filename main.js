@@ -25,7 +25,7 @@ function showInfo(type, msg){
 }
 function add() {
     if (input_text.value.trim()) {
-        setTimeout(showInfo("success", `Başarıyla eklendi \'${input_text.value'}`),2000) ;
+        setTimeout(showInfo("success", `Başarıyla eklendi \'${input_text.value}'`),2000) ;
         let liste_item = document.createElement("li");
         let i = document.createElement("i");
         liste_item.className = "list-group-item d-flex justify-content-between align-items-center";
