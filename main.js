@@ -38,7 +38,7 @@ function add() {
         liste_item.textContent = input_text.value;
         liste_item.appendChild(i);
         ul.appendChild(liste_item);
-        input_text.value = "";
+        
     }
     else{
         showInfo("danger", "Boş bir değer gönderme")
