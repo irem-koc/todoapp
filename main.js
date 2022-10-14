@@ -43,6 +43,7 @@ function add() {
     else{
         showInfo("danger", "Boş bir değer gönderme")
     }
+    input_text.value = "";
 
 }
 icon_close.addEventListener("click",deleteListItem)
