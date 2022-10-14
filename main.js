@@ -8,11 +8,12 @@ let li = document.querySelectorAll("li#li")
 let input_text = document.querySelector("input");
 let icon_close = document.querySelector("i.fa.fa-close")
 let input_search = document.querySelector("#formInput_1");
-
+let input_search_1 = document.querySelector("#formInput");
 
 let butonlar = document.querySelector(".btn").addEventListener("click", function (e) {
     e.preventDefault()
 })
+
 function showInfo(type, msg){
 //     <div class="alert alert-primary" role="alert">
 //   A simple primary alert—check it out!
