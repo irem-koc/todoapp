@@ -46,6 +46,11 @@ function add() {
     input_text.value = "";
 
 }
+input_search_1.addEventListener("keypress", function(e){
+    if(e.key ==="Enter"){
+        add();
+    }
+})
 icon_close.addEventListener("click",deleteListItem)
 function deleteListItem(){
     //get the parent of the span (li) 
