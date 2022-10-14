@@ -7,6 +7,9 @@ let hr = document.querySelector("#that")
 let li = document.querySelectorAll("li#li")
 let input_text = document.querySelector("input");
 let icon_close = document.querySelector("i.fa.fa-close")
+let input_search = document.querySelector("#formInput_1");
+
+
 let butonlar = document.querySelector(".btn").addEventListener("click", function (e) {
     e.preventDefault()
 })
@@ -58,4 +61,20 @@ function deleteAll(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
+}
+input_search.addEventListener("keyup",filtered)
+function filtered(e){
+    const search_value= e.target.value.toLowerCase();//todo arayında yazılan değer
+    const list_items = document.querySelectorAll(".list-group-item")
+    
+    list_items.forEach(function(item){
+        const content_li = item.textContent.toLowerCase(); 
+        if(content_li.indexOf(search_value)===-1){
+            item.setAttribute("style", "display: none!important")
+        }
+        else{
+            item.setAttribute("style", "display: block")
+            
+        }
+    },)
 }
